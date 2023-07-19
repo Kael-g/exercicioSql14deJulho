@@ -1,0 +1,44 @@
+--create database resistenciaStarWars;
+
+--create table rebeldes (id_rebelde serial primary key,
+--					nome varchar(255) not null,
+--					idade integer,
+--					genero varchar(30),
+--					base varchar(255),
+--					status varchar(15));
+
+--create table loja (id_produto serial primary key,
+--					produto varchar(255),
+--					valor integer);
+
+--insert into loja (produto, valor)
+--values ('arma', 100);
+
+--insert into loja (produto, valor)
+--values ('municao', 30);
+
+--insert into loja (produto, valor)
+--values ('agua', 5);
+
+--insert into loja (produto, valor)
+--values ('comida', 15);
+
+--select * from denuncias d ;
+
+--update loja
+--set produto = 'água'
+--where produto = 'agua';
+
+--create table inventario (id_rebelde integer,
+--					id_produto integer,
+--					qtd_produto integer,
+--					foreign key (id_rebelde) references rebeldes(id_rebelde),
+--					foreign key (id_produto) references loja(id_produto));
+
+--alter table rebeldes
+--add column denuncias integer;
+
+--create table denuncias(id_suspeito integer,
+--					id_delator integer,
+--					foreign key (id_suspeito) references rebeldes(id_rebelde),
+--					foreign key (id_delator) references rebeldes(id_rebelde));
